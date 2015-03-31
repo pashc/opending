@@ -7,37 +7,20 @@ compile:
 
 soft-clean:
 	@echo "soft cleanup..."
-	$(RM) ./listing/*.aux
-	$(RM) ./chapters/*.aux
-	$(RM) *.aux
-	# $(RM) OpenDing.aux
-	$(RM) OpenDing.bbl
-	$(RM) OpenDing.blg
-	$(RM) OpenDing.ind
 	$(RM) OpenDing.ilg
-	$(RM) OpenDing.lof
-	$(RM) OpenDing.lot
-	$(RM) OpenDing.nlo
-	$(RM) OpenDing.out
+	$(RM) OpenDing.ind
+	$(RM) OpenDing.log
 	$(RM) OpenDing.toc
+	$(RM) OpenDing.aux
 	@echo "finished cleanup!"
 
 clean:
 	@echo "clean..."
-	$(RM) ./chapters/*.aux
-	$(RM) ./listing/*.aux
-	$(RM) *.aux
-	# $(RM) OpenDing.aux
-	$(RM) OpenDing.bbl
-	$(RM) OpenDing.ind
 	$(RM) OpenDing.ilg
-	$(RM) OpenDing.blg
-	$(RM) OpenDing.lof
-	$(RM) OpenDing.lot
-	$(RM) OpenDing.nlo
-	$(RM) OpenDing.out
-	$(RM) OpenDing.toc
+	$(RM) OpenDing.ind
 	$(RM) OpenDing.log
+	$(RM) OpenDing.toc
+	$(RM) OpenDing.aux
 	$(RM) OpenDing.pdf
 	@echo "finished cleanup!"
 
